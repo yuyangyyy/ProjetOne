@@ -126,13 +126,13 @@ body {
   }
   /* header */
   header {
-      margin-top: 55px;
-    height: 200px;
+    margin-top: 55px;
+    height: 150px;
     background-color: cadetblue;
   }
   header, h1 {
       margin: auto;
-      padding-top: 60px;
+      padding-top: 40px;
       text-align: center;
       font-size: 1.2em;
   }
@@ -148,8 +148,33 @@ body {
   .Maintitle {
       text-align: left;
       font-size: 1em;
-      position: relative;
+      float: top left;
   }
+.bodyarticles{
+    margin: 0;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}  
+
+.Top3{
+    display: grid;
+    justify-content: space-around;
+}
+
+  .Toparticle{
+      background: salmon;
+      border-radius: 1em;
+      padding: 1.3rem;
+      margin-bottom: 10px;
+      box-shadow: 1px 1px 5px 1px;
+  }
+
+  .Toparticle:hover{
+      transform: translateY(-1rem);
+  }
+
   /* 48em = 768px */
   @media (min-width: 48em) {
     .nave li {
@@ -181,4 +206,22 @@ body {
         font-size: 3em;
         padding-top: 80px;
     }
+    .bodyarticles{
+        margin: 0;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }  
+    
+    .Top3{
+        display: flex;
+    }
+    
+    .Toparticle{
+          background: salmon;
+          border-radius: 1em;
+          padding: 10rem;
+          margin-left: -5rem;
+          box-shadow: 1px 2px 12px 2px;
+      }
   }  
