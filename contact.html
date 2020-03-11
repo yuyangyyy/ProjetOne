@@ -9,29 +9,29 @@
 </head>
 
 <body>
-
-
     <div class="container1">
         <!-- descriptif -->
-        <header>
-            <h1></h1>
-        </header>
-        <!-- navBAr  -->
-        <nav>
-            <ul>
-                <li><a href="index.html">What the pic</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <header id="home">
+          <h1 class="titles">Welcome to What the pic</h1>
+      </header>
+      <!-- navBAr  -->
+      <nav class="nave">
+          <a href="" class="logo">What the pic</a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-        <!-- end navBar -->
+         <!-- end navBar -->
         <hr>
         <!-- formulaire de contact -->
-        <h1>Contact us</h1>
+        <h1 class="contact">Contact us</h1>
         
         <div class="containerform">
-          <form action="/action_page.php">
+          <form>
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
@@ -57,7 +57,7 @@
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
-                <option value="Wild">Wild Code School</option>
+                <option value="Wild">Wild Code</option>
               </select>
             </div>
           </div>
