@@ -135,6 +135,18 @@ body {
       text-align: center;
       font-size: 1em;
   }
+  /* hover */
+  li a:hover:not(.active) {
+    transition: all 700ms;
+    background-color: rgb(202, 202, 202);
+    color: white;
+  }
+
+  /* li a:hover {
+    transition: all 600ms;
+    font-size: 1em;
+  } */
+  
   /* 48em = 768px */
   @media (min-width: 48em) {
     .nave li {
