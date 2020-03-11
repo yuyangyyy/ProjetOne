@@ -143,6 +143,11 @@ header h1
   text-align: center;
 }
 
+li a:hover:not(.active) {
+  transition: all 700ms;
+  background-color: rgb(202, 202, 202);
+}
+
 /* 48em = 768px */
 @media (min-width: 48em) {
   .nave li {
