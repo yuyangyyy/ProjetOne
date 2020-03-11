@@ -126,11 +126,16 @@ nav {
 }
 /* header */
 header {
-  padding: 20%;
+  padding: 5%;
   /* height: 200px; */
   text-align: center;
   font-size: 0.5em;
   background-color: cadetblue;
+}
+
+.describe{
+  font-weight: lighter;
+  font-style: italic;
 }
 /* 48em = 768px */
 @media (min-width: 48em) {
