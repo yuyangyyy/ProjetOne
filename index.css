@@ -126,9 +126,16 @@ body {
   }
   /* header */
   header {
-      margin-top: 55px;
+    margin-top: 55px;
     height: 200px;
-    background-color: cadetblue;
+    width: 100%;
+    background: url(https://www.aeroportlimoges.com/fileadmin/user_upload/voyages-2.jpg) 0 -200px;
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-position-x: -50px;
+    background-position-y:-200px;
+    /* background-size: 10px 700px; */
   }
   header, h1 {
       margin: auto;
