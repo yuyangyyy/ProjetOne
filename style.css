@@ -139,7 +139,6 @@ body {
   li a:hover:not(.active) {
     transition: all 700ms;
     background-color: rgb(202, 202, 202);
-    color: white;
   }
 
   /* li a:hover {
