@@ -37,12 +37,6 @@
   
 
   
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
   /* Clear floats after the columns */
   .row:after {
     content: "";
