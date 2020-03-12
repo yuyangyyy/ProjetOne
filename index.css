@@ -251,14 +251,14 @@
          text-shadow: 0.3em 0.3em 0.2em black
      }
      .Toparticle:not(:first-child) {
-         margin-left: -5rem;
+         margin-left: -2rem;
      }
  }
  /*FOOTER*/
  
  footer {
      background-color: rgb(155, 150, 150);
-     width: 100%;
+     width: 101%;
      display: grid;
  }
  
