@@ -127,6 +127,7 @@ body {
   /* header */
   header {
     margin-top: 55px;
+<<<<<<< HEAD
     height: 200px;
     width: 100%;
     background: url(https://www.aeroportlimoges.com/fileadmin/user_upload/voyages-2.jpg) 0 -200px;
@@ -136,10 +137,14 @@ body {
      background-position-x: -50px;
     background-position-y:-200px;
     /* background-size: 10px 700px; */
+=======
+    height: 150px;
+    background-color: cadetblue;
+>>>>>>> bc1a2d6705d3155a2ef5c4e8f714467573b47928
   }
   header, h1 {
       margin: auto;
-      padding-top: 60px;
+      padding-top: 40px;
       text-align: center;
       font-size: 1.2em;
   }
@@ -155,8 +160,33 @@ body {
   .Maintitle {
       text-align: left;
       font-size: 1em;
-      position: relative;
+      float: top left;
   }
+.bodyarticles{
+    margin: 0;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}  
+
+.Top3{
+    display: grid;
+    justify-content: space-around;
+}
+
+  .Toparticle{
+      background: salmon;
+      border-radius: 1em;
+      padding: 1.3rem;
+      margin-bottom: 10px;
+      box-shadow: 1px 1px 5px 1px;
+  }
+
+  .Toparticle:hover{
+      transform: translateY(-1rem);
+  }
+
   /* 48em = 768px */
   @media (min-width: 48em) {
     .nave li {
@@ -188,4 +218,22 @@ body {
         font-size: 3em;
         padding-top: 80px;
     }
+    .bodyarticles{
+        margin: 0;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }  
+    
+    .Top3{
+        display: flex;
+    }
+    
+    .Toparticle{
+          background: salmon;
+          border-radius: 1em;
+          padding: 10rem;
+          margin-left: -5rem;
+          box-shadow: 1px 2px 12px 2px;
+      }
   }  
