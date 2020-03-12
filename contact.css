@@ -1,21 +1,24 @@
 body {
   margin: 0;
-  /* font-family: Helvetica, sans-serif; */
-  background-color: #f4f4f4;
+  padding: 0;
+  background-color: #e9e0e0;
 }
 
 a {
   color: #000;
 }
 
-/* header */
+
+/* nav */
+
 nav {
   position: fixed;
   top: 0;
 }
+
 .nave {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -43,11 +46,12 @@ nav {
 
 .nave .logo {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 10px 100px;
   text-decoration: none;
   font-family: cursive;
 }
+
 
 /* menu */
 
@@ -56,6 +60,7 @@ nav {
   max-height: 0;
   transition: max-height .2s ease-out;
 }
+
 
 /* menu icon */
 
@@ -67,7 +72,6 @@ nav {
   position: relative;
   user-select: none;
   bottom: 25px;
-
 }
 
 .nave .menu-icon .navicon {
@@ -98,39 +102,50 @@ nav {
   top: -5px;
 }
 
+
 /* menu btn */
 
 .nave .menu-btn {
   display: none;
 }
 
-.nave .menu-btn:checked ~ .menu {
+.nave .menu-btn:checked~.menu {
   max-height: 240px;
 }
 
-.nave .menu-btn:checked ~ .menu-icon .navicon {
+.nave .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.nave .menu-btn:checked ~ .menu-icon .navicon:before {
+.nave .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.nave .menu-btn:checked ~ .menu-icon .navicon:after {
+.nave .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.nave .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.nave .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.nave .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nave .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
+
 /* header */
+
 header {
-  padding: 5%;
-  /* height: 200px; */
+  margin-top: 64px;
+  height: 60px;
   text-align: center;
   font-size: 0.5em;
-  background-color: cadetblue;
+  background-color: rgb(155, 150, 150);
+  padding-bottom: 3em;
+}
+
+header h1 {
+  padding-top: 20px;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 li a:hover:not(.active) {
@@ -138,35 +153,32 @@ li a:hover:not(.active) {
   background-color: rgb(202, 202, 202);
 }
 
-.describe{
-  font-weight: lighter;
-  font-style: italic;
-}
+
 /* 48em = 768px */
+
 @media (min-width: 48em) {
   .nave li {
-    float: left;
+      float: left;
   }
   .nave li a {
-    padding: 20px 30px;
+      padding: 20px 30px;
   }
   .nave .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-    font-size: 1.5em;
+      clear: none;
+      float: right;
+      max-height: none;
   }
   .nave .menu-icon {
-    display: none;
+      display: none;
   }
   header {
-    font-size: 1em;
+      font-size: 1em;
   }
   .nave .logo {
-    float: left;
-    font-size: 2em;
+      float: left;
+      font-size: 2em;
   }
-}  
+}
 
   input[type=text], textarea {
     width: 80%;
@@ -205,11 +217,10 @@ li a:hover:not(.active) {
   .containerform {
     border-radius: 5px;
     margin: auto;
-    
+    padding-top: 2em;
   }
   
   .col-75 {
-    float: left;
     width: 75%;
     margin-top: 6px;
   }
@@ -230,13 +241,6 @@ li a:hover:not(.active) {
     text-align: center;
   }
 
-  
-  @media screen and (max-width: 48em) {
-    .col-75, {
-      width: 100%;
-    }
-    
-
   input[type=text], textarea {
     width: 100%;
     padding: 12px;
@@ -245,13 +249,139 @@ li a:hover:not(.active) {
     resize: vertical;
   }
 
-  input[type=submit] {
-    background-color: salmon;
+  footer {
+    background-color: rgb(155, 150, 150);
+    display: grid;
+    padding-bottom: 9px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.socialnetworks {
+    display: flex;
+    justify-content: center;
+    border-bottom: .0625rem solid #17151540;
+}
+
+#follow,
+#created,
+#name {
+    text-align: center;
+}
+
+li {
+    margin: 0 0.3rem;
+}
+
+
+/* Style all font awesome icons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: #3B5998;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
+}
+
+
+/* Twitter */
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding-left: 10px;
+}
+
+
+/* Instagram */
+
+.fa-instagram {
+    color: #fff;
+    background-color: #d83174;
+    padding-left: 10px;
+}
+
+
+/* GitHub */
+
+.fa-github {
+    color: #fff;
+    background-color: #171515;
+    padding-left: 10px;
+}
+
+#logowild {
+    width: 175px;
+    height: 75px;
+}
+
+.logo {
+    text-align: center;
+}
+
+#name {
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+#created {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+
+/*Media quieries*/
+
+@media (min-width: 48em) {
+    .mainfooter {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-right-width: 0px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-center {
+        padding-right: 126px;
+        padding-left: 126px;
+        padding-top: 15px;
+    }
+    .footer-right {
+        padding-top: 38px;
+    }
+}
