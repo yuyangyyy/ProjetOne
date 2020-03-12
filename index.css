@@ -3,6 +3,7 @@
      /* font-family: Helvetica, sans-serif; */
      background-image: url(https://www.aeroportlimoges.com/fileadmin/user_upload/voyages-2.jpg);
      color: white;
+     
  }
  
  a {
@@ -136,6 +137,8 @@
      padding-top: 40px;
      text-align: center;
      font-size: 1.2em;
+     font-family: 'Viaoda Libre', cursive;
+
  }
  
  header p {
@@ -173,13 +176,22 @@
  }
  
  .Toparticle {
-     background: salmon;
+     background: rgb(245, 173, 107);
      border-radius: 1em;
      padding: 1.3rem;
      margin-bottom: 10px;
      box-shadow: 1px 1px 5px 1px;
+     font-family: font-family: 'Viaoda Libre', cursive;
  }
- 
+@media (max-width: 48em){
+ img{
+     max-width: 100%;
+ }
+ .Toparticle{
+     padding-left: 20px ;
+     padding-right: 20px;
+ }
+}
  .Toparticle:hover {
      transform: translateY(-1rem);
  }
@@ -226,12 +238,12 @@
          display: flex;
      }
      .Toparticle {
-         background: salmon;
+         background: rgb(245, 173, 107);
          border-radius: 1em;
-         padding: 10rem;
+         padding: 1rem;
          box-shadow: 1px 2px 12px 2px;
          margin-bottom: 100px;
-     }
+        }
      .Maintitle {
          font-size: 4.8em;
          margin-bottom: 100px;
@@ -245,7 +257,9 @@
  /*FOOTER*/
  
  footer {
-     background-color: rgb(112, 112, 112);
+     background-color: rgb(155, 150, 150);
+     width: 100%;
+     display: grid;
  }
  
  .list {
