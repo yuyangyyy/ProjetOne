@@ -128,16 +128,8 @@ body {
   /* header */
   header {
     margin-top: 55px;
-<<<<<<< HEAD
-
     /* background-size: 10px 700px; */
-=======
     height: 150px;
-<<<<<<< HEAD
-
-=======
->>>>>>> bc1a2d6705d3155a2ef5c4e8f714467573b47928
->>>>>>> 4ba560b5b23204796730109b6afd042c2de9a0cb
   }
   header, h1 {
       margin: auto;
