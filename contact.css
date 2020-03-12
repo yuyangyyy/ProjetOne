@@ -43,7 +43,7 @@ nav {
 
 .nave .logo {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 10px 100px;
   text-decoration: none;
   font-family: cursive;
@@ -133,6 +133,11 @@ header {
   background-color: cadetblue;
 }
 
+li a:hover:not(.active) {
+  transition: all 700ms;
+  background-color: rgb(202, 202, 202);
+}
+
 .describe{
   font-weight: lighter;
   font-style: italic;
@@ -149,6 +154,7 @@ header {
     clear: none;
     float: right;
     max-height: none;
+    font-size: 1.5em;
   }
   .nave .menu-icon {
     display: none;
