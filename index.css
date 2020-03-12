@@ -2,9 +2,10 @@
 body {
     margin: 0;
     /* font-family: Helvetica, sans-serif; */
-    background-color: #f4f4f4;
+    background-image: url(https://www.aeroportlimoges.com/fileadmin/user_upload/voyages-2.jpg);
+    color: white;
   }
-  
+
   a {
     color: #000;
   }
@@ -128,7 +129,7 @@ body {
   header {
     margin-top: 55px;
     height: 150px;
-    background-color: cadetblue;
+
   }
   header, h1 {
       margin: auto;
@@ -147,8 +148,12 @@ body {
   }
   .Maintitle {
       text-align: left;
-      font-size: 1em;
+      font-size: 2em;
       float: top left;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      color: white;
   }
 .bodyarticles{
     margin: 0;
@@ -221,7 +226,17 @@ body {
           background: salmon;
           border-radius: 1em;
           padding: 10rem;
-          margin-left: -5rem;
+          
           box-shadow: 1px 2px 12px 2px;
+          margin-bottom: 100px;
       }
-  }  
+    .Maintitle{
+      font-size: 4.8em;
+      margin-bottom: 100px;
+      color: white;
+      text-shadow: 0.3em 0.3em 0.2em black
+    }
+    .Toparticle:not(:first-child){
+      margin-left: -5rem;
+    }
+    }
