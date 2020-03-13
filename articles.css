@@ -1,7 +1,16 @@
-/* /* ---------------------------------------------------------------------------nav */
+ 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9e0e0;
+}
+
 a {
   color: #000;
 }
+
+
+/* nav */
 
 nav {
   position: fixed;
@@ -38,24 +47,28 @@ nav {
 
 .nave .logo {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 10px 100px;
   text-decoration: none;
   font-family: cursive;
 }
 
+
 /* menu */
+
 .nave .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
 }
 
+
 /* menu icon */
+
 .nave .menu-icon {
   cursor: pointer;
   display: inline-block;
-  /* float: left; */
+  float: left;
   padding: 2px 20px;
   position: relative;
   user-select: none;
@@ -90,7 +103,9 @@ nav {
   top: -5px;
 }
 
+
 /* menu btn */
+
 .nave .menu-btn {
   display: none;
 }
@@ -116,65 +131,66 @@ nav {
   top: 0;
 }
 
+
 /* header */
+
 header {
-  margin-top: 55px;
-  height: 200px;
-  background-color: cadetblue;
+  margin-top: 54px;
+  height: 60px;
+  text-align: center;
+  font-size: 0.5em;
+  background-color: rgb(155, 150, 150);
+  padding-bottom: 3em;
 }
 
 header h1 {
-  margin: auto;
-  padding-top: 80px;
+  padding-top: 20px;
+  font-size: 1.5em;
   text-align: center;
-  font-size: 1em;
 }
 
-/* hover */
 li a:hover:not(.active) {
   transition: all 700ms;
   background-color: rgb(202, 202, 202);
 }
 
-/* li a:hover {
-  transition: all 600ms;
-  font-size: 1em;
-} */
+
 /* 48em = 768px */
+
 @media (min-width: 48em) {
-  .nave li {
-    float: left;
-  }
 
-  .nave li a {
-    padding: 20px 30px;
-  }
-
-  .nave .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-    font-size: 1.5em;
-  }
-
-  .nave .menu-icon {
-    display: none;
-  }
-
-  header {
+  body, html{
+    height: 100%;
+    width: 100%;
     margin: auto;
-    font-size: 1em;
-    height: 500px;
   }
 
+  .container1{
+    margin: auto;
+    width: 100%;
+  
+  }
+
+  .nave li {
+      float: left;
+  }
+  .nave li a {
+      padding: 20px 30px;
+  }
+  .nave .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+  }
+  .nave .menu-icon {
+      display: none;
+  }
+  header {
+      font-size: 1em;
+  }
   .nave .logo {
-    float: left;
-    font-size: 2em;
-  }
-
-  /* header */
-  header h1 {
-    font-size: 3em;
+      float: left;
+      font-size: 2em;
   }
 }
 
@@ -214,6 +230,7 @@ p {
   -webkit-box-shadow: 0px 12px 3px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 12px 3px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 12px 3px -5px rgba(0, 0, 0, 0.75);
+  padding-top: 5px;
 }
 
 @media (min-width:48em) {
@@ -221,7 +238,7 @@ p {
     margin: 0;
     padding: 0;
     min-height: 80vh;
-    background: #333;
+    background:;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +280,7 @@ p {
   }
 
   .container .card .face.face1 .content {
-    opacity: 0.2;
+    opacity: 0.3;
     transition: 0.5s;
   }
 
@@ -331,129 +348,140 @@ p {
 
 /*----------------------------------------------end articles*/
 /*---------------------------------------------------------------footer */
-footer {
-  background-color: rgb(112, 112, 112);
+  footer {
+    background-color: rgb(155, 150, 150);
+    display: grid;
+    padding-top: -15px;
 }
 
-
-
 .list {
-
-  display: flex;
-  list-style: none;
-  padding-left: 0px;
-  margin-top: 0px;
-
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
 }
 
 .socialnetworks {
-  display: flex;
-  justify-content: center;
-  border-bottom: .0625rem solid #17151540;
-
+    display: flex;
+    justify-content: center;
+    border-bottom: .0625rem solid #17151540;
 }
 
 #follow,
 #created,
 #name {
-  text-align: center;
-
+    text-align: center;
+    padding: -100px;
 }
 
 li {
-  margin: 0 0.3rem;
+    margin: 0 0.3rem;
 }
+
 
 /* Style all font awesome icons */
+
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
+
 /* Add a hover effect if you want */
+
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
+
 
 /* Set a specific color for each brand */
 
+
 /* Facebook */
+
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
+
 
 /* Twitter */
+
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
+    padding-left: 10px;
 }
+
 
 /* Instagram */
+
 .fa-instagram {
-  color: #fff;
-  background-color: #d83174;
+    color: #fff;
+    background-color: #d83174;
+    padding-left: 10px;
 }
 
+
 /* GitHub */
+
 .fa-github {
-  color: #fff;
-  background-color: #171515;
+    color: #fff;
+    background-color: #171515;
+    padding-left: 10px;
 }
 
 #logowild {
-  width: 175px;
-  height: 75px;
+    width: 175px;
+    height: 75px;
 }
 
 .logo {
-  text-align: center;
+    text-align: center;
 }
 
 #name {
-  margin-bottom: 40px;
-  margin-top: 0px;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 #copyright {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 #created {
-  margin-bottom: 5px;
-  margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .footer-bottom {
-  text-align: center;
+    text-align: center;
 }
+
 
 /*Media quieries*/
 
 @media (min-width: 48em) {
-
-  .mainfooter {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-right-width: 0px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-
-  .footer-center {
-    padding-right: 126px;
-    padding-left: 126px;
-    padding-top: 15px;
-  }
-
-  .footer-right {
-    padding-top: 38px;
-  }
+    .mainfooter {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-right-width: 0px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-center {
+        padding-right: 126px;
+        padding-left: 126px;
+        padding-top: 15px;
+    }
+    .footer-right {
+        padding-top: 38px;
+    }
 }
