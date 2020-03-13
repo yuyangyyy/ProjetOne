@@ -253,6 +253,7 @@
      }
      .Toparticle:not(:first-child) {
          margin-left: -2rem;
+        
      }
  }
  /*FOOTER*/
