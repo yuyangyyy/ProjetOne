@@ -1,8 +1,18 @@
  body {
      margin: 0;
      /* font-family: Helvetica, sans-serif; */
-     background-image: url(https://www.aeroportlimoges.com/fileadmin/user_upload/voyages-2.jpg);
+     background: url(https://www.aeroportlimoges.com/fileadmin/user_upload/voyages-2.jpg);
      color: white;
+ }
+
+ body.theme-dark {
+     background: black;
+     
+ }
+
+ .look{
+    
+     font-size: 30px;
      
  }
  
@@ -14,6 +24,7 @@
  nav {
      position: fixed;
      top: 0;
+     color: black;
  }
  
  .nave {
@@ -334,6 +345,10 @@
  
  .logo {
      text-align: center;
+ }
+
+ body.theme-dark .logo {
+    color: red;
  }
  
  #name {
